@@ -18,13 +18,19 @@ def filter_primes(numbers):
     - A prime number is a number greater than 1 that has no divisors other than 1 and itself.
     - Use loop logic to determine primality (no external libraries).
     """
-#     numbers = [2, 3, 4, 5, 6, 7, 8]
+  
     
-#     for number in numbers:
-#         if number % 1 == 0:
-#             return number
+    for number in numbers:
+        if number // number == 1:
+            return number
         
-# print(filter_primes())
+    for number in numbers:
+        if number// 1 == number:
+            return number
+        
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    
+print(filter_primes(numbers))
             
 
 
@@ -49,7 +55,14 @@ def draw_square(size):
     - Use '\n' to separate rows.
     - Do not print inside the function; just return the final string.
     """
-    pass  # TODO: implement function logic here
+    # pass  # TODO: implement function logic here
+
+    row = "***"
+
+    for i in row:
+        return "***\n***\n***" 
+    
+print(draw_square("size"))
 
 
 # ==================================
