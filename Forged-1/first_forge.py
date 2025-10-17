@@ -18,7 +18,14 @@ def filter_primes(numbers):
     - A prime number is a number greater than 1 that has no divisors other than 1 and itself.
     - Use loop logic to determine primality (no external libraries).
     """
-    pass  # TODO: implement function logic here
+#     numbers = [2, 3, 4, 5, 6, 7, 8]
+    
+#     for number in numbers:
+#         if number % 1 == 0:
+#             return number
+        
+# print(filter_primes())
+            
 
 
 # ==================================
@@ -85,7 +92,11 @@ def reverse_words(sentence):
     >>> reverse_words("The sky is blue")
     'blue is sky The'
     """
-    pass  # TODO: implement function logic here
+    words = sentence.split()
+    return " ".join(reversed(words))
+   
+print(reverse_words("blue is sky The"))
+    
 
 
 def count_vowels(word):
