@@ -21,14 +21,16 @@ def filter_primes(numbers):
   
     
     for number in numbers:
-        if number // number == 1:
+        if number // number == 0:
             return number
         
-    for number in numbers:
-        if number// 1 == number:
+        elif number // 1 == number:
             return number
         
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        else:
+            return None
+        
+numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
     
 print(filter_primes(numbers))
             
