@@ -30,7 +30,7 @@ def filter_primes(numbers):
         else:
             return None
         
-numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+numbers = [2, 3, 4, 5, 6, 7, 8,]
     
 print(filter_primes(numbers))
             
